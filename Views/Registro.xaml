@@ -14,6 +14,7 @@
         <Label 
             Text="REGISTRO:"
             FontSize="22"
+            TextColor="Blue"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
@@ -125,10 +126,12 @@
         </Grid>
 
         <Button x:Name="btnCalcular"
+                Style="{StaticResource BotonGlobal}"
                 Text="Calcular Pago Mensual"
                 Clicked="btnCalcular_Clicked"/>
 
         <Button x:Name="btnResumen"
+                Style="{StaticResource BotonGlobal}"
                 Text="Ver Resumen"
                 Clicked="btnResumen_Clicked"/>
 

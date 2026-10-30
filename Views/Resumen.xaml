@@ -65,10 +65,12 @@
         </Grid>
 
         <Button x:Name="btnGenerartxt"
+                Style="{StaticResource BotonGlobal}"
                 Text="Generar txt"
                 Clicked="btnGenerartxt_Clicked"/>
 
         <Button x:Name="btnCerrarSesion"
+                Style="{StaticResource BotonGlobal}"
                 Text="Cerrar Sesión"
                 Clicked="btnCerrarSesion_Clicked"/>
     </VerticalStackLayout>

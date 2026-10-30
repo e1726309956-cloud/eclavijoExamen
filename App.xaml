@@ -5,10 +5,24 @@
              x:Class="eclavijoExamen.App">
     <Application.Resources>
         <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
+
+            <Style x:Key="LabelGlobal"
+               TargetType="Label">
+                <Setter Property="FontSize"
+                    Value="16"/>
+                <Setter Property="TextColor"
+                    Value="Black"/>
+            </Style>
+
+            <Style x:Key="BotonGlobal"
+               TargetType="Button">
+                <Setter Property="FontSize"
+                    Value="16"/>
+                <Setter Property="BackgroundColor"
+                    Value="SkyBlue"/>
+                <Setter Property="TextColor"
+                    Value="Black"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

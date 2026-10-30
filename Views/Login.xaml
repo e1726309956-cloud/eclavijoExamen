@@ -57,6 +57,7 @@
                    Grid.Column="1"
                    />
             <Button x:Name="btnIniciarSesion"
+                    Style="{StaticResource BotonGlobal}"
                     Text="Iniciar Sesión"
                     Clicked="btnIniciarSesion_Clicked"
                     Grid.Row="2"
@@ -66,6 +67,7 @@
 
         <Button x:Name="btnAcerca"
                 Text="Acerca de"
+                Style="{StaticResource BotonGlobal}"
                 Clicked="btnAcerca_Clicked"/>
 
 
