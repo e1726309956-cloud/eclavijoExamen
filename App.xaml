@@ -20,7 +20,7 @@
                     Value="16"/>
                 <Setter Property="BackgroundColor"
                     Value="SkyBlue"/>
-                <Setter Property="TextColor"
+                <Setter  Property="TextColor"
                     Value="Black"/>
             </Style>
         </ResourceDictionary>
