@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eclavijoExamen.Views.Registro"
+             Title="Registro">
+    <VerticalStackLayout
+        Spacing="10"
+        Padding="20">
+        
+        <Label x:Name="lblUsuario"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+        
+        <Label 
+            Text="REGISTRO:"
+            FontSize="22"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Grid ColumnSpacing="10"
+              RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+
+            <Label Text="Apellido"
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+
+            <Label Text="Edad"
+                   Grid.Row="0"
+                   Grid.Column="2"/>
+
+            <Entry x:Name="txtNombre"
+                   Placeholder="Ingresar Nombre"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="txtApellido"
+                   Placeholder="Ingresar Apellido"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+
+            <Entry x:Name="txtEdad"
+                   Placeholder="Ingresar Edad"
+                   Keyboard="Numeric"
+                   Grid.Row="1"
+                   Grid.Column="2"/>
+        </Grid>
+
+        <Grid ColumnSpacing="10" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Fecha Inicio"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+
+            <DatePicker x:Name="dpFecha"
+                        Grid.Row="0"
+                        Grid.Column="1"/>
+
+            <Label Text="Plan"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+
+            <Picker x:Name="pkPlan"
+                    Grid.Row="1"
+                    Grid.Column="1">
+                <Picker.Items>
+                    <x:String>Musculación</x:String>
+                    <x:String>Cardio</x:String>
+                    <x:String>Crossfit</x:String>
+                    <x:String>Full</x:String>
+                </Picker.Items>
+
+            </Picker>
+            <Label Text="Casillero"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+
+            <Switch x:Name="swCasillero"
+                    Grid.Row="2"
+                    Grid.Column="1"/>
+
+            <Label Text="Monto Inicial"
+                   Grid.Row="3"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="txtMontoInicial"
+                   Keyboard="Numeric"
+                   Grid.Row="3"
+                   Grid.Column="1"/>
+            
+            <Label Text="Pago Mensual"
+                   Grid.Row="4"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="txtPagoMensual"
+                   IsEnabled="False"
+                   Grid.Row="4"
+                   Grid.Column="1"/>
+
+        </Grid>
+
+        <Button x:Name="btnCalcular"
+                Text="Calcular Pago Mensual"
+                Clicked="btnCalcular_Clicked"/>
+
+        <Button x:Name="btnResumen"
+                Text="Ver Resumen"
+                Clicked="btnResumen_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
