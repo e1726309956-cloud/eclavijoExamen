@@ -126,13 +126,13 @@
         </Grid>
 
         <Button x:Name="btnCalcular"
-                Style="{StaticResource BotonGlobal}"
                 Text="Calcular Pago Mensual"
+                 Style="{StaticResource BotonGlobal}"
                 Clicked="btnCalcular_Clicked"/>
 
-        <Button x:Name="btnResumen"
-                Style="{StaticResource BotonGlobal}"
+        <Button x:Name="btnResumen"               
                 Text="Ver Resumen"
+                Style="{StaticResource BotonGlobal}"
                 Clicked="btnResumen_Clicked"/>
 
     </VerticalStackLayout>

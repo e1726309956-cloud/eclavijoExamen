@@ -6,6 +6,7 @@
     <Application.Resources>
         <ResourceDictionary>
 
+
             <Style x:Key="LabelGlobal"
                TargetType="Label">
                 <Setter Property="FontSize"
@@ -20,7 +21,7 @@
                     Value="16"/>
                 <Setter Property="BackgroundColor"
                     Value="SkyBlue"/>
-                <Setter  Property="TextColor"
+                <Setter Property="TextColor"
                     Value="Black"/>
             </Style>
         </ResourceDictionary>
